@@ -1,4 +1,4 @@
-const createPostValidator = (req, res, next) => {
+exports.createPostValidator = (req, res, next) => {
   //validatr for title field
   req.check("title", "title is required").notEmpty();
   req.check("title", "title should consist of 4 to 150 charatcters").isLength({
